@@ -1,0 +1,87 @@
+/* body {
+    font-family: sans-serif;
+    margin: 0;
+
+}
+
+p {
+   font-size: 5rem;
+   
+    text-align: center;
+
+
+}
+
+div {
+    border: 1px solid black;
+    height: 300px;
+    margin: 15px;
+    width: 100vw;
+}
+
+.banner {
+    background-image: url(https://abrilviagemeturismo.files.wordpress.com/2016/10/72969111.jpeg?quality=70&strip=info&w=921);
+    background-position: center;
+    background-size: cover;
+    height: 50vw;
+    width: 100vw;
+} */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: reapet (4, auto);
+    grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "main main . ."
+    "footer footer footer footer";
+
+
+
+}
+
+header {
+    align-items: center;
+    grid-area: header;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px ;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+/* justify-content: space-between; */
+
+
+}
+
+header h3 {
+color: rgb(87, 155, 219);
+
+}
+header nav a {
+    color: azure;
+    text-decoration: none;
+
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(43, 226, 113);
+
+}
+
+.sidebar {
+    background-color: blueviolet;
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+    background-color: aquamarine;
+}
